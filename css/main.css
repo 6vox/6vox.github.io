@@ -1,3 +1,4 @@
+@charset "utf-8";
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 html,
@@ -5,7 +6,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #1c120a;
 }
 
 html {
@@ -14,12 +15,12 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #abe9f7;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #abe9f7;
     text-shadow: none;
 }
 
@@ -27,7 +28,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #1c120a;
     margin: 1em 0;
     padding: 0;
 }
@@ -51,7 +52,7 @@ textarea {
 
 .browsehappy {
     margin: 0.2em 0;
-    background: #ccc;
+    background: #1c120a;
     color: #000;
     padding: 0.2em 0;
 }
@@ -73,14 +74,13 @@ body {
 
 /* ===================
     ALL: Theme color
+    http://coolors.co/bd155c-1c120a-abe9f7-756f6a-e6e1d1
    =================== */
 
 .header-container {
-    border-bottom: 5px dotted #efefef;
 }
 
 .footer-container {
-    border-top: 20px solid #efefef;
 }
 
 .header-container,
@@ -89,7 +89,7 @@ body {
 }
 
 .title {
-    color: white;
+    color: #fefefe;
 }
 
 /* ==============
@@ -110,18 +110,20 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #ccc;
+    color: #fefefe;
+    background: #94959c;
+    width: 32%;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: #fefefe;
 }
 
 nav a:hover {
     text-decoration: none;
-    background: #666;
+    background: #1c120a;
+    transition: background .5s ease;
 }
 
 /* ==============
@@ -129,7 +131,7 @@ nav a:hover {
    ============== */
 
 .main {
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .main article h1 {
@@ -137,7 +139,7 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
+    color: #fefefe;
     padding: 20px 0;
 }
 
@@ -149,36 +151,55 @@ nav a:hover {
     padding-top: 20px;
 }
 
+
+
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  display: none;
+}
 section {
   border-radius: 8px;
-  border: 5px solid #eee;
+  border: 5px solid #1c120a;
   padding: 30px;
-  margin: 10px;
   min-height: 300px;
 }
 section h1 {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #1c120a;
   padding-bottom: 20px;
 }
 
 section table th {
   text-align: left;
   padding: 5px 20px;
+  white-space: nowrap;
 }
 
 .footer-container footer {
-    color: white;
+    color: #fefefe;
     padding: 0;
 }
 .footer-container footer h3 {
   float: right;
   font-size: .8em;
-  color: #222;
+  color: #1c120a;
 }
 
+nav a {
+  float: left;
+  min-width: 80px;
+  margin: 2px;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+nav a.active {
+  background-color: #70b55b
+}
 
 
 
@@ -202,12 +223,7 @@ section table th {
    ==================== */
 
     nav a {
-        float: left;
-        min-width: 80px;
-        margin: 2px;
-        padding: 12px;
-        border-radius: 4px;
-        box-sizing: border-box;
+      max-width: 100px;
     }
 
 /* ========================
@@ -230,7 +246,7 @@ section table th {
    ==================== */
 
     .header-container {
-      padding: 30px;
+      padding: 30px 30px 0 30px;
     }
 
 /* ============
