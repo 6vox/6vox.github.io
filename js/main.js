@@ -1,4 +1,27 @@
 ;(function ( $, window, document, undefined ) {
+  var displayLogo = ""
+      + "$$$$$$\ $$\                                                    $$\                     \n"
+      + "\_$$  _|$  |                                                   $$ |                    \n"
+      + "  $$ |  \_/$$$$$$\$$$$\              $$\ $$\   $$\  $$$$$$$\ $$$$$$\          $$$$$$\  \n"
+      + "  $$ |     $$  _$$  _$$\             \__|$$ |  $$ |$$  _____|\_$$  _|         \____$$\ \n"
+      + "  $$ |     $$ / $$ / $$ |            $$\ $$ |  $$ |\$$$$$$\    $$ |           $$$$$$$ |\n"
+      + "  $$ |     $$ | $$ | $$ |            $$ |$$ |  $$ | \____$$\   $$ |$$\       $$  __$$ |\n"
+      + "$$$$$$\    $$ | $$ | $$ |            $$ |\$$$$$$  |$$$$$$$  |  \$$$$  |      \$$$$$$$ |\n"
+      + "\______|   \__| \__| \__|            $$ | \______/ \_______/    \____/        \_______|\n"
+      + "                               $$\   $$ |                                              \n"
+      + "                               \$$$$$$  |                                              \n"
+      + "                                \______/                                               \n"
+      + "                         $$$$$$\  $$\    $$\  $$$$$$\  $$\   $$\                       \n"
+      + "                        $$  __$$\ $$ |   $$ |$$  __$$\ $$ |  $$ |                      \n"
+      + "                        $$ /  \__|$$ |   $$ |$$ /  $$ |\$$\ $$  |                      \n"
+      + "                        $$$$$$$\  \$$\  $$  |$$ |  $$ | \$$$$  /                       \n"
+      + "                        $$  __$$\  \$$\$$  / $$ |  $$ | $$  $$<                        \n"
+      + "                        $$ /  $$ |  \$$$  /  $$ |  $$ |$$  /\$$\                       \n"
+      + "                         $$$$$$  |   \$  /    $$$$$$  |$$ /  $$ |                      \n"
+      + "                         \______/     \_/     \______/ \__|  \__|                      \n"
+  ;
+  console.log(displayLogo);
+
   var GRP_IN_ANIM = [
     'bounceIn', 'bounceInDown', 'bounceInLeft', 'bounceInRight', 'bounceInUp', 'fadeIn', 'fadeInDown', 'fadeInDownBig', 'fadeInLeft', 'fadeInLeftBig',
     'fadeInRight', 'fadeInRightBig', 'fadeInUp', 'fadeInUpBig', 'flipInX', 'flipInY', 'lightSpeedIn', 'rotateIn', 'rotateInDownLeft', 'rotateInDownRight',
@@ -12,9 +35,6 @@
   GRP_STAY_ANIM = [ 'bounce', 'flash', 'pulse', 'rubberBand', 'shake', 'swing', 'tada', 'wobble', 'flip' ]
   ;
 
-$(function(){
-  console.log('debug: start');
-
   var animatecss = function($target, animateClass, callback) {
     $target.removeClass().addClass(animateClass + ' animated')
       .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', callback);
@@ -26,7 +46,8 @@ $(function(){
   $('nav a').on('click', function(event){
     event.preventDefault();
 
-    var $targ = $(this.href.match('#.*?$')[0]);
+    var $that = $(this),
+        $targ = $(this.href.match('#.*?$')[0]);
 
     if ($targ.is(':visible')) {
       //同じものを押された場合はとどまるアニメーション
@@ -39,6 +60,8 @@ $(function(){
         $('section:visible').hide().removeClass();
         $targ.show();
         $(this).removeClass();
+        $('.active').removeClass('active');
+        $that.addClass('active');
 
         animatecss($(document.body).show(), pickRandom(GRP_IN_ANIM), function(){
           $(this).removeClass();
@@ -51,5 +74,8 @@ $(function(){
 
   //初期表示
   $('section').not(':first').hide();
-});
+  animatecss($(document.body).show(), pickRandom(GRP_IN_ANIM), function(){
+    $(this).removeClass();
+  });
+
 })( jQuery, window, document );
