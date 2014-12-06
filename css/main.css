@@ -109,10 +109,11 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+    font-size: 12px;
 
     color: #fefefe;
     background: #94959c;
-    width: 32%;
+    width: 31.5%;
 }
 
 nav a:hover,
@@ -161,6 +162,12 @@ nav a:hover {
    ========================================================================== */
 body {
   display: none;
+}
+header h1 {
+  margin: .67em;
+}
+#img-logo {
+  width: 80px;
 }
 section {
   border-radius: 8px;
@@ -222,9 +229,18 @@ nav a.active {
     INTERMEDIATE: Menu
    ==================== */
 
-    nav a {
-      max-width: 100px;
-    }
+  nav a {
+    max-width: 100px;
+    font-size: 14px;
+  }
+
+  header h1 {
+    margin: .67em 0;
+  }
+
+  #img-logo {
+    width: 190px;
+  }
 
 /* ========================
     INTERMEDIATE: IE Fixes
