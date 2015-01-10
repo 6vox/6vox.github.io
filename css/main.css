@@ -89,7 +89,8 @@ body {
 }
 
 .title {
-    color: #fefefe;
+  color: #fefefe;
+  font-family: "cooper-black-std", "cooper black";
 }
 
 /* ==============
@@ -163,8 +164,11 @@ nav a:hover {
 body {
   display: none;
 }
+.title a {
+  text-decoration: none;
+}
 header h1 {
-  margin: .67em;
+  margin: .25em 0;
 }
 #img-logo {
   width: 80px;
@@ -209,6 +213,51 @@ nav a.active {
 }
 
 
+
+/* ==========================================================================
+   svg
+   ========================================================================== */
+.svg-text{
+stroke:#333;
+fill:#fff;
+stroke-width:.2;
+stroke-dasharray: 3000;
+stroke-dashoffset:3000;
+animation:         DASH 3s ease-in alternate forwards;
+-webkit-animation: DASH 3s ease-in 0s forwards;
+-o-animation:      DASH 3s ease-in 0s forwards;
+animation:         DASH 3s ease-in 0s forwards;
+}
+@-webkit-keyframes DASH{
+0%{stroke-dashoffset:3000;}
+30%{stroke-dashoffset:3000;}
+80%{stroke-dashoffset:2000;fill:#fff;}
+100%{stroke-dashoffset:0;fill:#333;}
+}
+@keyframes DASH{ */
+0%{stroke-dashoffset:3000;}
+30%{stroke-dashoffset:3000;}
+80%{stroke-dashoffset:2000;fill:#fff;}
+100%{stroke-dashoffset:0;fill:#333;}
+}
+@-moz-keyframes DASH{
+0%{stroke-dashoffset:3000;}
+30%{stroke-dashoffset:3000;}
+80%{stroke-dashoffset:2000;fill:#fff;}
+100%{stroke-dashoffset:0;fill:#333;}
+}
+@-o-keyframes DASH{
+0%{stroke-dashoffset:3000;}
+30%{stroke-dashoffset:3000;}
+80%{stroke-dashoffset:2000;fill:#fff;}
+100%{stroke-dashoffset:0;fill:#333;}
+}
+@-ms-keyframes DASHf{
+0%{stroke-dashoffset:3000;}
+30%{stroke-dashoffset:3000;}
+80%{stroke-dashoffset:2000;fill:#fff;}
+100%{stroke-dashoffset:0;fill:#333;}
+}
 
 
 
