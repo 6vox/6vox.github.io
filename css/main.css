@@ -90,7 +90,6 @@ body {
 
 .title {
   color: #fefefe;
-  font-family: "cooper-black-std", "cooper black";
 }
 
 /* ==============
@@ -155,9 +154,6 @@ nav a:hover {
 
 
 
-
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -218,53 +214,47 @@ nav a.active {
    svg
    ========================================================================== */
 .svg-text{
-stroke:#333;
-fill:#fff;
-stroke-width:.2;
-stroke-dasharray: 3000;
-stroke-dashoffset:3000;
-animation:         DASH 3s ease-in alternate forwards;
--webkit-animation: DASH 3s ease-in 0s forwards;
--o-animation:      DASH 3s ease-in 0s forwards;
-animation:         DASH 3s ease-in 0s forwards;
+  font-family: "cooper-black-std", "cooper black", "Lobster";
+  stroke:#333;
+  fill:#333;
+  stroke-width:.2;
+  stroke-dasharray: 3000;
+  stroke-dashoffset:3000;
+  animation:         DASH 3s ease-in alternate forwards;
+  -webkit-animation: DASH 3s ease-in 0s forwards;
+  -o-animation:      DASH 3s ease-in 0s forwards;
+  animation:         DASH 3s ease-in 0s forwards;
 }
 @-webkit-keyframes DASH{
-0%{stroke-dashoffset:3000;}
-30%{stroke-dashoffset:3000;}
-80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  0%{stroke-dashoffset:3000;fill:#fff;}
+  30%{stroke-dashoffset:3000;}
+  80%{stroke-dashoffset:2000;fill:#fff;}
+  100%{stroke-dashoffset:0;fill:#333;}
 }
-@keyframes DASH{ */
-0%{stroke-dashoffset:3000;}
-30%{stroke-dashoffset:3000;}
-80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+@keyframes DASH{
+  0%{stroke-dashoffset:3000;fill:#fff;}
+  30%{stroke-dashoffset:3000;}
+  80%{stroke-dashoffset:2000;fill:#fff;}
+  100%{stroke-dashoffset:0;fill:#333;}
 }
 @-moz-keyframes DASH{
-0%{stroke-dashoffset:3000;}
-30%{stroke-dashoffset:3000;}
-80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  0%{stroke-dashoffset:3000;fill:#fff;}
+  30%{stroke-dashoffset:3000;}
+  80%{stroke-dashoffset:2000;fill:#fff;}
+  100%{stroke-dashoffset:0;fill:#333;}
 }
 @-o-keyframes DASH{
-0%{stroke-dashoffset:3000;}
-30%{stroke-dashoffset:3000;}
-80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  0%{stroke-dashoffset:3000;fill:#fff;}
+  30%{stroke-dashoffset:3000;}
+  80%{stroke-dashoffset:2000;fill:#fff;}
+  100%{stroke-dashoffset:0;fill:#333;}
 }
 @-ms-keyframes DASHf{
-0%{stroke-dashoffset:3000;}
-30%{stroke-dashoffset:3000;}
-80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  0%{stroke-dashoffset:3000;fill:#fff;}
+  30%{stroke-dashoffset:3000;}
+  80%{stroke-dashoffset:2000;fill:#fff;}
+  100%{stroke-dashoffset:0;fill:#333;}
 }
-
-
-
-
-
-
-
 
 
 
