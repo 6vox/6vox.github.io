@@ -219,7 +219,6 @@ nav a.active {
   -o-animation:      DASH 3s ease-in 0s forwards;
   animation:         DASH 3s ease-in 0s forwards;
   stroke:#333;
-  fill:#fff;
   stroke-width:.2;
   stroke-dasharray: 3000;
   stroke-dashoffset:3000;
