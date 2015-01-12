@@ -228,13 +228,15 @@ fill:#fff;
   0%{stroke-dashoffset:3000;fill:#fff;}
   30%{stroke-dashoffset:3000;}
   80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  98%{fill:#333333;}
+  100%{stroke-dashoffset:0;}
 }
 @keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
   30%{stroke-dashoffset:3000;}
   80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  98%{fill:#333333;}
+  100%{stroke-dashoffset:0;}
 }
 @-moz-keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
