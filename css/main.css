@@ -214,15 +214,15 @@ nav a.active {
    svg
    ========================================================================== */
 .svg-text{
-  stroke:#333;
-fill:#fff;
-  stroke-width:.2;
-  stroke-dasharray: 3000;
-  stroke-dashoffset:3000;
   animation:         DASH 3s ease-in alternate forwards;
   -webkit-animation: DASH 3s ease-in 0s forwards;
   -o-animation:      DASH 3s ease-in 0s forwards;
   animation:         DASH 3s ease-in 0s forwards;
+  stroke:#333;
+  fill:#fff;
+  stroke-width:.2;
+  stroke-dasharray: 3000;
+  stroke-dashoffset:3000;
 }
 @-webkit-keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
