@@ -213,9 +213,9 @@ nav a.active {
 /* ==========================================================================
    svg
    ========================================================================== */
-.svg-text{
+svg, .svg-text{
   stroke:#333;
-fill:#fff;
+  fill:#fff;
   stroke-width:.2;
   stroke-dasharray: 3000;
   stroke-dashoffset:3000;
@@ -228,13 +228,13 @@ fill:#fff;
   0%{stroke-dashoffset:3000;fill:#fff;}
   30%{stroke-dashoffset:3000;}
   80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  100%{stroke-dashoffset:0;fill:#333;}
 }
 @keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
   30%{stroke-dashoffset:3000;}
   80%{stroke-dashoffset:2000;fill:#fff;}
-100%{stroke-dashoffset:0;fill:#333;}
+  100%{stroke-dashoffset:0;fill:#333;}
 }
 @-moz-keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
