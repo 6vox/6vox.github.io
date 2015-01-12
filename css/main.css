@@ -213,12 +213,13 @@ nav a.active {
 /* ==========================================================================
    svg
    ========================================================================== */
-.svg-text{
-  animation:         DASH 3s ease-in alternate forwards;
-  -webkit-animation: DASH 3s ease-in 0s forwards;
-  -o-animation:      DASH 3s ease-in 0s forwards;
-  animation:         DASH 3s ease-in 0s forwards;
+svg, .svg-text{
+  animation:         DASH 3s ease-in 0s;
+  -webkit-animation: DASH 3s ease-in 0s;
+  -o-animation:      DASH 3s ease-in 0s;
+  animation:         DASH 3s ease-in 0s;
   stroke:#333;
+  fill: #333;
   stroke-width:.2;
   stroke-dasharray: 3000;
   stroke-dashoffset:3000;
@@ -227,15 +228,15 @@ nav a.active {
   0%{stroke-dashoffset:3000;fill:#fff;}
   30%{stroke-dashoffset:3000;}
   80%{stroke-dashoffset:2000;fill:#fff;}
-  98%{fill:#333333;}
-  100%{stroke-dashoffset:0;}
+  90%{stroke-dashoffset:0;}
+  100%{fill:#333333;}
 }
 @keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
   30%{stroke-dashoffset:3000;}
   80%{stroke-dashoffset:2000;fill:#fff;}
-  98%{fill:#333333;}
-  100%{stroke-dashoffset:0;}
+  90%{stroke-dashoffset:0;}
+  100%{fill:#333333;}
 }
 @-moz-keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
