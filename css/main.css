@@ -216,7 +216,6 @@ nav a.active {
 .svg-text{
   font-family: "cooper-black-std", "cooper black", "Lobster";
   stroke:#333;
-  fill:#333;
   stroke-width:.2;
   stroke-dasharray: 3000;
   stroke-dashoffset:3000;
@@ -229,7 +228,8 @@ nav a.active {
   0%{stroke-dashoffset:3000;fill:#fff;}
   30%{stroke-dashoffset:3000;}
   80%{stroke-dashoffset:2000;fill:#fff;}
-  100%{stroke-dashoffset:0;fill:#333;}
+  90%{stroke-dashoffset:0}
+  100%{fill:#333;}
 }
 @keyframes DASH{
   0%{stroke-dashoffset:3000;fill:#fff;}
