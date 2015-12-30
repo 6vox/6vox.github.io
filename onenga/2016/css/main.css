@@ -173,6 +173,10 @@ nav a:hover {
 }
 .main-finish img.company-logo {
 }
+.main-finish p.message-before {
+  padding: 0;
+  text-align: center;
+}
 .main-finish p.message {
   padding: 0 0 0 15px;
   text-align: center;
