@@ -9,7 +9,7 @@ $(function(){
   ;
   $('.qr-icon').css({ 'max-height': h/3+'px', 'padding': h/10+'px' });
   $('.full_member').on('load', function(){ $(this).css({ 'max-height': h+'px', 'padding-top': padTop('.full_member')+'px' }); });
-  $('.company-logo').on('load', function(){ $(this).css({ 'padding-top': padTop('.company-logo')+'px' }); });
+  $('.message').on('load', function(){ $(this).css({ 'padding-top': padTop('.message')+'px' }); });
 
   // タイムライン
   var tl_sp = new TimelineMax({delay:0.5, repeat:0, repeatDelay:1});
@@ -37,6 +37,7 @@ $(function(){
 
       .to(".full_member",  6, {opacity: "1"}, 12)
       .to(".full_member",  3, {opacity: "0"}, 18)
+
       .to(".message",      4, {opacity: "1"}, 20)
       .to(".company-logo", 4, {opacity: "1"}, 22)
     ;
