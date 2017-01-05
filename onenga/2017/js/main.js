@@ -35,11 +35,13 @@ $(function(){
       .to(".kinga_row2",   2, {opacity: "0"}, 10)
       .to(".copy-right",   2, {opacity: "0"}, 10)
 
-      .to(".full_member",  6, {opacity: "1"}, 12)
-      .to(".full_member",  3, {opacity: "0"}, 18)
+      .to(".2016-message", 3, {opacity: "1"}, 12)
+      .to(".full_member",  6, {opacity: "1"}, 14)
+      .to(".full_member",  3, {opacity: "0"}, 21)
+      .to(".2016-message", 3, {opacity: "0"}, 21)
 
-      .to(".message",      4, {opacity: "1"}, 20)
-      .to(".company-logo", 4, {opacity: "1"}, 22)
+      .to(".message",      4, {opacity: "1"}, 23)
+      .to(".company-logo", 4, {opacity: "1"}, 25)
     ;
     //bodyクリックで初めから再生
     $(document.body).on('click', function(){ tl_sp.isActive() ? false : tl_sp.restart(); });
