@@ -96,6 +96,14 @@ body {
     MOBILE: Menu
    ============== */
 
+a,
+a:hover
+a:hover,
+a:visited {
+    color: #1c120a;
+    text-decoration: none;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -160,15 +168,19 @@ nav a:hover {
 body {
   display: none;
 }
+
 .title a {
   text-decoration: none;
 }
+
 header h1 {
   margin: .25em 0;
 }
+
 #img-logo {
   width: 80px;
 }
+
 section {
   border-radius: 8px;
   border: 5px solid #1c120a;
@@ -179,11 +191,77 @@ section h1 {
   border-bottom: 1px solid #1c120a;
   padding-bottom: 20px;
 }
-
+section h3 small {
+  background-color: #70b55b;
+  border-radius: 3px;
+  color: #fefefe;
+  font-size: 60%;
+  margin-left: 10px;
+  padding: 3px;
+}
 section table th {
   text-align: left;
   padding: 5px 20px;
   white-space: nowrap;
+}
+
+.outline a {
+  color: #70b55b;
+}
+.outline a img,
+.outline a span {
+  float: left;
+}
+.outline a span {
+  padding-top: 10px;
+}
+.outline a img {
+  border-radius: 72px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  width: 72px;
+  margin-right: 20px;
+}
+
+.members ol {
+  padding: 0;
+}
+
+.members li {
+  float: left;
+  border-radius: 4px;
+  border: 1px solid #1c120a;
+  list-style: none;
+  margin: 5px;
+  padding: 5px;
+  font-size: 80%;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  position: relative;
+}
+.members li div {
+  margin: 8px 0;
+}
+.members li p {
+  margin: 0;
+  padding: 0;
+  line-height: 12px;
+}
+.members li div img {
+  border-radius: 60px;
+  border: 1px solid #ccc;
+  padding: 2px;
+  width: 60px;
+}
+.members li small img {
+  position: absolute;
+  width: 16px;
+  right: 10px;
+  bottom: 10px;
+}
+.links a {
+  text-decoration: underline;
 }
 
 .footer-container footer {
@@ -206,6 +284,10 @@ nav a {
 }
 nav a.active {
   background-color: #70b55b
+}
+
+.cooper {
+    font-family: cooper-black-std, cooper black, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
 
@@ -271,7 +353,7 @@ svg, .svg-text{
 
   nav a {
     max-width: 100px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   header h1 {
@@ -321,7 +403,6 @@ svg, .svg-text{
 
     .main article {
     }
-
 }
 
 @media only screen and (min-width: 1140px) {

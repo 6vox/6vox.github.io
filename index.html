@@ -12,7 +12,7 @@
 
 <link rel="stylesheet" href="css/normalize.min.css">
 <link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/main.css?v=1">
 <link rel="shortcut icon" href="favicon.ico">
 
 <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -53,11 +53,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <nav>
       <ul>
         <li><a class="active" href="#about">About</a></li>
-        <li><a href="#members">Members</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#outline">Outline</a></li>
-        <li><a href="#SNS">SNS</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="" href="#outline">Outline</a></li>
+        <li><a class="" href="#members">Members</a></li>
+        <li><a class="" href="#works">Works</a></li>
+        <li><a class="" href="#links">Links</a></li>
+        <li><a class="" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -68,74 +68,107 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <article>
 
       <section id="about">
-        <h1>About</h1>
-        <p>大阪、靭公園近くに小さな事務所をかまえるシステム／ソフトウェア開発会社です.</p>
+        <h1 class="cooper">About</h1>
+        <p>大阪、北浜で事務所をかまえるシステム／ソフトウェア開発会社です.</p>
+        <p>2013年7月、フリーランス・エンジニアをしていた弊社代表が「ひとりでできないことをしたい」と思い立ち上げた会社です。現在は主に Ruby On Rails のシステム開発を行っています。</p>
+        <p>🍎💙🍈🍆🍋🍊</p>
       </section>
 
-      <section id="members">
-        <h1>Members</h1>
-        <ol>
-          <li>Takashi Oshima</li>
-          <li>Kensuke Yamaguchi</li>
-          <li>Junki Nishizaki</li>
-          <li>Masahiro Ito</li>
-          <li>Junichi Murata</li>
-        </ol>
-      </section>
-
-      <section id="works">
-        <h1>Works</h1>
-        <ul>
-          <li>Up Comming...</li>
-        </ul>
-        <h1>Skills</h1>
-        <ul>
-          <li>Java</li>
-          <li>Ruby</li>
-          <li>PHP</li>
-        </ul>
-      </section>
-
-      <section id="outline">
-        <h1>Outline</h1>
+      <section id="outline" class="outline">
+        <h1 class="cooper">Outline</h1>
         <table>
           <tbody>
           <tr><th>会社名</th><td>株式会社6VOX</td></tr>
           <tr><th>事業内容</th><td>システム／ソフトウェア開発</td></tr>
           <tr><th>創業</th><td>2013 年</td></tr>
-          <tr><th>社員数</th><td>5 名</td></tr>
+          <tr><th>社員数</th><td>エンジニア 5 名</td></tr>
           <tr><th>取引銀行</th><td>三菱東京UFJ銀行 他...</td></tr>
           <tr><th>電話</th><td>06-6136-5563</td></tr>
           <tr><th>MAIL</th><td>info@6vox.com</td></tr>
           </tbody>
         </table>
-        <h3>大阪本社</h3>
+        <h3>大阪本社<small>3名</small></h3>
         <table>
           <tbody>
           <tr><th>所在地</th><td>〒541-0041 大阪府大阪市中央区北浜一丁目９番１０号 北浜宗田ビル１０１</td></tr>
           </tbody>
         </table>
 
-        <h3>京都事務所</h3>
+        <h3>京都事務所<small>1名</small></h3>
         <table>
           <tbody>
           <tr><th>所在地</th><td>〒606-0042 京都市左京区上高野鷺町26-3 北山テナント 1F B区画</td></tr>
           </tbody>
         </table>
 
-        <h3>Hanare Iwakura</h3>
+        <h4>Hanare Iwakura</h4>
         <div class="clearfix">
           <a href="http://hanare-iwakura.space/" target="_blank">
-            <span style="float: left"><img src="img/hanare-iwakura-logo.jpg"></span>
-            <span style="float: left; padding-top: 20px;">京都事務所は、コワーキング・スペース Hanare Iwakura としても運営しています<br>
+            <img src="img/hanare-iwakura-logo.jpg">
+            <span>京都事務所は、コワーキング・スペース Hanare Iwakura としても運営しています<br>
             http://hanare-iwakura.space/</span>
           </a>
         </div>
 
+        <h3>東京(リモートワーク)<small>1名</small></h3>
       </section>
 
-      <section id="SNS">
-        <h1>SNS</h1>
+      <section id="members" class="members">
+        <h1 class="cooper">Members</h1>
+        <ol class="clearfix">
+          <li>
+            <a href="https://github.com/toshima66" target="_blank">
+              <div><p>Takashi</p><p>Oshima</p></div>
+              <div><img src="img/icon-to.png"></div>
+              <small><img src="img/GitHub-Mark-32px.png"></small>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/junki929" target="_blank">
+              <div><p>Junki</p><p>Nishizaki</p></div>
+              <div><img src="img/icon-jn.jpg"></div>
+              <small><img src="img/GitHub-Mark-32px.png"></small>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/kyamaguchi81" target="_blank">
+              <div><p>Kensuke</p><p>Yamaguchi</p></div>
+              <div><img src="img/icon-ky.png"></div>
+              <small><img src="img/GitHub-Mark-32px.png"></small>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/u9r52sld" target="_blank">
+              <div><p>Masahiro</p><p>Ito</p></div>
+              <div><img src="img/icon-mi.jpg"></div>
+              <small><img src="img/GitHub-Mark-32px.png"></small>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/murajun1978" target="_blank">
+              <div><p>Junichi</p><p>Murata</p></div>
+              <div><img src="img/icon-jm.png"></div>
+              <small><img src="img/GitHub-Mark-32px.png"></small>
+            </a>
+          </li>
+        </ol>
+      </section>
+
+      <section id="works">
+        <h1 class="cooper">Works</h1>
+        <ul>
+          <li>Up Comming...</li>
+        </ul>
+        <h1 class="cooper">Skills</h1>
+        <ul>
+          <li>Ruby</li>
+          <li>Java</li>
+          <li>PHP</li>
+        </ul>
+      </section>
+
+      <section id="links" class="links">
+        <h1 class="cooper">Links</h1>
         <ul>
           <li><a href="http://blog.6vox.com" target="_blank">blog</a></li>
           <li><a href="https://www.facebook.com/sixvox/" target="_blank">facebook</a></li>
@@ -144,7 +177,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </section>
 
       <section id="contact">
-        <h1>Contact</h1>
+        <h1 class="cooper">Contact</h1>
         <table>
           <tbody>
           <tr><th>電話</th><td>06-6136-5563</td></tr>
@@ -165,7 +198,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 <script src="js/vendor/jquery-1.11.1.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=1"></script>
 
 </body>
 </html>
