@@ -57,7 +57,7 @@
     } else {
       //遷移
       animatecss($(document.body), pickRandom(GRP_OUT_ANIM), function(){
-        $('section:visible').hide().removeClass();
+        $('section:visible').hide();
         $targ.show();
         $(this).removeClass();
         $('.active').removeClass('active');
@@ -73,7 +73,7 @@
   });
 
   //初期表示
-  $('section').not(':first').hide();
+  $('section').not($('.active').attr('href')).hide();
   animatecss($(document.body).show(), pickRandom(GRP_IN_ANIM), function(){
     $(this).removeClass();
   });
