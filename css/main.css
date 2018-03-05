@@ -208,9 +208,14 @@ section table th {
 .outline a {
   color: #70b55b;
 }
+.outline a.address {
+  color: #1c120a;
+  text-decoration-line: underline;
+}
 .outline a img,
 .outline a span {
   float: left;
+  display: block;
 }
 .outline a span {
   padding-top: 10px;
