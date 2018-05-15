@@ -19,7 +19,6 @@ const Main = ({ id, title, children }) => (
 Main.propTypes = {
   id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
 }
 
 export default Main
