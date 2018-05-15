@@ -1,5 +1,6 @@
 import React from 'react'
 import Main from '../components/Main'
+import Title from '../components/Title'
 import Table from '../components/Table'
 import TableBody from '../components/TableBody'
 import CompanyInfo from '../components/CompanyInfo'
@@ -7,6 +8,7 @@ import BranchOfficeList from '../components/BranchOfficeList'
 
 const Outline = ({ data }) => (
   <Main id="outline" title="Outline">
+    <Title text="Outline" />
     <CompanyInfo info={data.site.siteMetadata.company.info} />
     <BranchOfficeList offices={data.site.siteMetadata.company.branchOffices} />
   </Main>

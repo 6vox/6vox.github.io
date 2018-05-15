@@ -1,16 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Title from '../Title'
 import './index.css'
 
-const Main = ({ id, title, children }) => (
+const Main = ({ id, children }) => (
   <div className="main-container">
     <div className="main wrapper clearfix">
       <article>
-        <section id={id}>
-          <Title text={title} />
-          {children}
-        </section>
+        <section id={id}>{children}</section>
       </article>
     </div>
   </div>
