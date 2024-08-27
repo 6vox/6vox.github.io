@@ -22,6 +22,7 @@
       background-color: #000;
       font-family: 'PixelMplus10', 'Courier New', Courier, monospace;
       line-height: 1.8;
+      letter-spacing: 0.1em;
     }
 
     .first-area {
@@ -174,10 +175,6 @@
           complete: function () {
             document.querySelector('.qr-area').style.display = 'none';
             document.querySelector('.second-area').style.display = 'block';
-            window.scrollTo({
-              top: document.body.scrollHeight,
-              behavior: 'smooth'
-            });
             const typed = new Typed('#typed-element', {
               strings: messages,
               typeSpeed: 50,
