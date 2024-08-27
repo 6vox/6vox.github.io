@@ -8,7 +8,7 @@
   <style>
     body {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       height: 100vh;
       margin: 0;
@@ -21,6 +21,7 @@
 
     .first-area {
       display: flex;
+      justify-content: flex-start;
       flex-direction: column;
       align-items: center;
       gap: 20px;
@@ -29,7 +30,8 @@
 
     .qr-area {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      flex-direction: column;
       align-items: center;
       height: 100vh;
       width: 100vw;
@@ -37,8 +39,8 @@
     }
 
     .qr-area img {
-      width: 200px;
-      /* 初期サイズ */
+      margin-top: 15%;
+      width: 25%;
     }
 
     .second-area {
@@ -52,7 +54,7 @@
     }
 
     .link-area {
-      margin-top: 40px;
+      margin: 60px auto;
       display: flex;
       flex-direction: row;
       gap: 20px;
@@ -114,25 +116,27 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script>
     const messages = [
-      `イベントで出会ったみなさまこんにちは！<br>オオシマです！<br><br>
-        みなさんには、<br>
+      ` みなさんこんにちは！<br>
+        <br>
         <strong>南吹田琥珀街 の 第１街人</strong><br>
-        という説明が<br>
-        わかりやすいでしょうか？<br><br>
-        私は普段、街にある事務所で<br>
-        プログラマーのお仕事をしています<br><br>
-        私の好みは、<br>
+        オオシマです！<br>
+        <br>
+        普段は街にある事務所で<br>
+        プログラマーのお仕事をしています<br>
+        <br>
+        私の好みは、
         <br>#ハック 👨‍💻
         <br>#レコード 🎶
         <br>#マンガ 📖
         <br>#カレー 🍛
         <br>#プランツ 🌿
         <br>#ビール 🍺
-        <br>
         <br>などです。<br><br>
         ぜひ、InstagramやFacebookで<br>
-        つながりましょう！<br><br>
-        今後ともよろしくお願いします！`
+        つながりましょう！<br>
+        <br>
+        今後ともよろしくお願いします！
+        <br>`
     ];
     const duration = 750;
 
@@ -166,6 +170,10 @@
               strings: messages,
               typeSpeed: 50,
               onComplete: function () {
+                window.scrollTo({
+                  top: document.body.scrollHeight,
+                  behavior: 'smooth'
+                });
                 anime({
                   targets: '.link-area',
                   opacity: [0.1, 1],
