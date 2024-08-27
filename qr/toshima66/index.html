@@ -6,17 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>QR/Toshima66</title>
   <style>
+    @font-face {
+        font-family: 'PixelMplus10';
+        src: url('./PixelMplus10.ttf') format('truetype');
+    }
     body {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       height: 100vh;
       margin: 0;
-      font-family: 'Courier New', Courier, monospace;
       color: #00FF00;
       flex-direction: column;
       flex-wrap: nowrap;
       background-color: #000;
+      font-family: 'PixelMplus10', 'Courier New', Courier, monospace;
+      line-height: 1.8;
     }
 
     .first-area {
@@ -169,6 +174,10 @@
           complete: function () {
             document.querySelector('.qr-area').style.display = 'none';
             document.querySelector('.second-area').style.display = 'block';
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              behavior: 'smooth'
+            });
             const typed = new Typed('#typed-element', {
               strings: messages,
               typeSpeed: 50,
