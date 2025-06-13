@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IMPORT VINTAGE × CODE ― Make Today Exciting</title>
+
+  <!-- Font --------------------------------------------------------- -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#fffdf8;
+      --text:#1d1d1f;
+      --accent:#ff6c00;
+      --accent-soft:#fff1e6;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.7;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      padding:6vh 4vw;
+      min-height:100vh;
+    }
+
+    /* -------- Headings -------- */
+    h1{
+      font-size:clamp(2.2rem,4vw + 1rem,4rem);
+      font-weight:700;
+      text-align:center;
+      margin-bottom:1rem;
+      background:linear-gradient(90deg,#ff8a00 0%,#e52e71 100%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+    h2{
+      font-size:1.5rem;
+      margin-bottom:1rem;
+      background:linear-gradient(90deg,#ff8a00 0%,#e52e71 100%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    /* -------- Sections -------- */
+    p.tagline{
+      font-size:1.25rem;
+      text-align:center;
+      margin:-.8rem 0 2rem;
+      color:#555;
+      font-style:italic;
+    }
+    p.lead{
+      font-size:1.1rem;
+      max-width:46rem;
+      text-align:center;
+      margin:0 auto 2.6rem;
+    }
+
+    /* -------- Pitch -------- */
+    .pitch{
+      text-align:center;
+      max-width:40rem;
+      margin-bottom:3rem;
+    }
+    .pitch p{margin-top:.6rem}
+
+    /* -------- CTA -------- */
+    .cta{
+      width:100%;
+      max-width:38rem;
+      background:var(--accent-soft);   /* 背景色は従来どおり */
+      border:2px solid var(--accent);  /* 左だけ → 四辺すべて同じ色に */
+      border-radius:.8rem;
+      padding:2rem 1.8rem;
+      text-align:center;
+      margin-bottom:3rem;
+    }
+    /* 以下はそのまま現行を維持 */
+    .cta h3{
+      font-size:1.25rem;
+      font-weight:700;
+      margin-bottom:.8rem;
+    }
+    .cta h3::before{content:"📍";margin-right:.4rem}
+    .cta p.lead{
+      margin-top:1rem;
+      margin-bottom:0;
+    }
+    .cta strong{color:var(--accent);font-weight:700}
+
+    .staff{
+      display:inline-flex;
+      align-items:center;
+      gap:.55rem;
+      margin:1rem 0;
+      font-weight:700;
+    }
+    .staff img{width:48px;height:48px;border-radius:50%}
+
+    /* -------- Fruits & Footer -------- */
+    .fruits{
+      font-size:.8em;
+      letter-spacing:.18rem;
+      text-align:center;
+    }
+    footer{
+      font-size:.8rem;
+      opacity:.6;
+      text-align:center;
+      margin-top:auto;
+      padding:2rem 0 .5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- ========== Hero ========== -->
+  <h1>IMPORT VINTAGE × CODE</h1>
+  <p class="tagline">― 今日をもっとワクワクする ―</p>
+  <p class="lead">
+    日本最大級のインポート古着専門店のシステム開発にワクワクする<br>
+    そんな <strong>あなた</strong> を探しています
+  </p>
+
+  <!-- ========== Pitch (囲いを外してグラデ見出し) ========== -->
+  <section class="pitch">
+    <h2>数十万の一点モノ。倉庫もレジもダッシュボードも。</h2>
+    <p>
+      <strong>古着のすべて</strong>をコードで束ねる挑戦。<br>
+      古着ビジネスの裏側を一緒にハックしませんか？
+    </p>
+  </section>
+
+  <!-- ========== Call to Action (目立つブロック) ========== -->
+  <section class="cta">
+    <h3>応募方法</h3>
+    <p>関西&nbsp;Ruby&nbsp;会議&nbsp;08 の会場で、スタッフＴシャツを着ている私に、</p>
+    <p class="lead"><strong>直接声をかけてください。</strong></p>
+    <div class="staff">
+      <img src="https://avatars.githubusercontent.com/u/904191" alt="@toshima66 アイコン">
+      <span>@toshima66</span>
+    </div>
+    <p>会場でぜひお会いしましょう！</p>
+    <p class="fruits" role="img" aria-label="fun squad">🍎💙🍈🍆🍋🍊</p>
+  </section>
+
+  <!-- ========== Signature ========== -->
+
+  <footer>
+    <p>© 2025 6VOX CO., LTD.</p>
+  </footer>
+</body>
+</html>
