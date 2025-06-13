@@ -295,7 +295,14 @@ nav a.active {
     font-family: cooper-black-std, cooper black, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 
-
+section#about hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 2em 0;
+    padding: 0;
+}
 
 /* ==========================================================================
    svg
