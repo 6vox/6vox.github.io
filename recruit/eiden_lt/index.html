@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="6VOX presents 叡電LT - 古着が大好きなエンジニア募集！日本最大級のインポート古着専門店JAM TRADINGのシステム開発" />
+  <meta name="keywords" content="エンジニア募集,古着,システム開発,6VOX,JAM TRADING" />
+  <title>IMPORT VINTAGE × CODE ― Make Today Exciting | 6VOX</title>
+  <script src="https://unpkg.com/stimulus/dist/stimulus.umd.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body, html { 
+      margin: 0; 
+      padding: 0; 
+      height: 100%; 
+      width: 100%; 
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif; 
+      background: #fff; 
+      color: #222; 
+      line-height: 1.6;
+    }
+    
+    .slide { 
+      display: none; 
+      padding: 20px; 
+      height: 100%; 
+      width: 100%; 
+      text-align: center; 
+      overflow-y: auto;
+    }
+    
+    .slide p { 
+      text-align: left; 
+      margin-bottom: 1rem;
+    }
+    
+    .slide p.sub-title { 
+      text-align: center; 
+      font-size: 1.2rem;
+      color: #666;
+    }
+    
+    .slide.active { 
+      display: block; 
+    }
+    
+    h1, h2, h3 { 
+      margin-bottom: 1rem; 
+      line-height: 1.3;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+    
+    h2 {
+      font-size: 2rem;
+      color: #444;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+      color: #555;
+    }
+    
+    .requirements { 
+      text-align: left; 
+      display: inline-block; 
+      margin-top: 1rem; 
+      max-width: 600px;
+    }
+    
+    .requirements li { 
+      margin-bottom: 0.5rem; 
+      line-height: 1.5;
+    }
+    
+    .controls {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255,255,255,0.95);
+      padding: 15px 0;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+      z-index: 100;
+    }
+    .controls button, .controls .btn-share {
+      margin: 0 8px;
+    }
+    .slide-number {
+      display: inline-block;
+      margin: 0 8px;
+      background: none;
+      color: #333;
+      padding: 0;
+      border-radius: 0;
+      font-size: 1rem;
+      min-width: 48px;
+      text-align: center;
+      vertical-align: middle;
+      box-shadow: none;
+      position: static;
+      z-index: auto;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    
+    .highlight {
+      background: linear-gradient(transparent 60%, #ffeb3b 60%);
+      padding: 0 2px;
+    }
+    
+    button, .btn-share { 
+      padding: 12px 24px; 
+      font-size: 1rem; 
+      margin: 5px; 
+      cursor: pointer; 
+      border: none;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    
+    button {
+      background: #f8f9fa;
+      color: #333;
+      border: 1px solid #dee2e6;
+    }
+    
+    button:hover {
+      background: #e9ecef;
+      transform: none;
+    }
+    
+    .btn-share { 
+      background: #1da1f2; 
+      color: #fff; 
+      text-decoration: none; 
+      display: inline-block; 
+    }
+    
+    .btn-share:hover {
+      background: #0d8bd9;
+      transform: none;
+    }
+    
+    @media (max-width: 768px) {
+      .slide {
+        padding: 15px;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      h3 {
+        font-size: 1.2rem;
+      }
+      
+      .controls {
+        padding: 10px 0;
+      }
+      
+      button, .btn-share {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body data-controller="slides">
+
+  <!-- Slides -->
+  <div class="slide active" role="region">
+    <h1>🚃 叡電LT 🚃</h1>
+    <p class="sub-title">株式会社6VOX presents</p>
+    <h4>開始までしばらくお待ちください 💨</h4>
+  </div>
+
+  <div class="slide" role="region">
+    <h1>🙋 自己紹介</h1>
+    <p>6VOX代表のオオシマです。</p>
+    <p>2013年、「ひとりでできないことをしたい」と思い会社を立ち上げました。</p>
+    <p>紆余曲折あり現在はソロ会社ですが、おもしろいと思う人と「組む」ことで実現しようと考えています。</p>
+    <p>また、10年目を節目に事業を再編し、「おもろい」と思う領域をすべて射程に入れました。</p>
+    <p>システム開発を軸に、街づくり・音楽・古着・食など――カルチャーを媒介に、人とアイデアが化学反応を起こす場をつくる活動をしています。</p>
+  </div>
+
+  <div class="slide" role="region">
+    <h1>👳 オレがカレー屋になったのは、おまえたちのせいだ&#x1faf5;</h1>
+    <p>今日ここに参加されているような、エンジニアさん達がとても強すぎて、私にはとうてい敵わないと思い、、、</p>
+    <p>エンジニアリング以外の分野でも挑戦していきたいと思い、自分にできることや興味があることを追いかけていきました。</p>
+    <p>その結果、街づくりやカルチャーをテーマにした事業にも挑戦しています。</p>
+    <p>例えば、街づくりコミュニティの仲間と一緒に、来月から間借りでカレー屋デビューの予定です😋</p>
+    <p>今回のスポンサーも。実はやる予定ではなかったのですが。電車貸し切りLTに手をあげるひとがおらず。気付いたら手をあげてしまった(ちょっと酔ってた😢)</p>
+    <p>でも、せっかくなので、、、</p>
+  </div>
+
+  <div class="slide" role="region">
+    <h1>🎯 ピンポイントで刺しに来た</h1>
+    <h3>🧑‍💻 エンジニアリング &lt; 👕古着</h3>
+    <p class="sub-title">な、ひとを、、、</p>
+  </div>
+
+  <div class="slide" role="region">
+    <h1>ん？🤔</h1>
+    <p>今日、この場にいる方たちは、ほとんど<strong>みなさん</strong></p>
+    <p>🧑‍💻 エンジニアリング > etc</p>
+    <p>な、方たちだとわかってます。</p>
+    <p>が、<strong>みなさんの周りには、</strong></p>
+    <h3>🧑‍💻 エンジニアリング &lt; 👕古着</h3>
+    <p>な、方がおられるのではないでしょうか、、、！？</p>
+  </div>
+
+  <div class="slide" role="region">
+    <h1>そこで💡</h1>
+    <p class="sub-title">みなさんには</p>
+    <h3>Xでの拡散をお願いしたいのです！😎</h3>
+  </div>
+
+  <div class="slide" role="region">
+    <h2>あらためて、募集についての概要</h2>
+    <p>現在開発を担当している、古着屋さんのシステム開発を一緒にしていただける方を募集します。</p>
+    <h3>古着屋さん、JAM TRADINGについて</h3>
+    <p>大阪を拠点に、全国に実店舗とECサイトを展開。取扱点数は日本最大級(数十万点)。海外から直接仕入れたインポート古着を中心に、幅広い年代・ジャンルの商品を扱っています。ファッション好きが集まる活気ある会社です。</p>
+  </div>
+
+  <div class="slide" role="region">
+    <h2>6VOX × JAM TRADING</h2>
+    <ul class="requirements">
+      <li>JAM TRADINGは10名規模から100名超へ成長。</li>
+      <li>日本最大級のインポート古着専門店で、現在は在庫管理、販売管理などのシステムを構築している。</li>
+      <li>今後システムの範囲は拡大していく予定。</li>
+      <li>現行システムが事業に合わず、刷新が急務。</li>
+      <li>現在は1名体制のため、協力者を募集中です。</li>
+    </ul>
+  </div>
+
+  <div class="slide" role="region">
+    <h2>募集要項</h2>
+    <ul class="requirements">
+      <li>フルスタック志望のエンジニア</li>
+      <li>募集人数：数名</li>
+      <li>技術選定や開発言語が変わっても柔軟に対応できる方（未知の技術や言語でも「やってみる」気持ちがある方）</li>
+    </ul>
+    <h2>勤務条件・形態</h2>
+    <ul class="requirements">
+      <li>フレックス勤務（リモート可だが、週に数回はオフィスに来てください）</li>
+      <li>大阪・南吹田オフィス勤務</li>
+      <li>正社員／協力会社／フリーランス／副業どれでもOK</li>
+    </ul>
+  </div>
+
+  <div class="slide" role="region">
+    <h2>応募・拡散のお願い</h2>
+    <p>応募方法：</p>
+    <p>SNS（Xなど）からDMいただけましたら、<strong>対面で</strong>カジュアル面談させていただきます。</p>
+    <p><a href="https://x.com/toshima66" target="_blank" rel="noopener noreferrer">X: @toshima66</a></p>
+    <p>もしよければ、この募集を X でシェアしてください！</p>
+    <a class="btn-share"
+       href="#"
+       id="shareLink"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Xでシェアする">Xでシェアする</a>
+  </div>
+
+  <div class="slide" role="region">
+    <h2>ありがとうございました！</h2>
+    <h3>出発します〜！🚃💨</h3>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls" role="navigation" aria-label="スライドナビゲーション">
+    <button data-action="click->slides#prev" aria-label="前のスライド">もどる</button>
+    <div class="slide-number" id="slideNumber"></div>
+    <button data-action="click->slides#next" aria-label="次のスライド">次へ 🚃</button>
+  </div>
+
+  <script>
+    (() => {
+      const app = Stimulus.Application.start();
+      app.register("slides", class extends Stimulus.Controller {
+        connect() {
+          this.slides = Array.from(document.querySelectorAll('.slide'));
+          this.index = 0;
+          this.show();
+          this.setupShareLink();
+          this.setupKeyboardNavigation();
+        }
+        
+        setupShareLink() {
+          const text = encodeURIComponent('古着が大好きなエンジニア募集！日本最大級のインポート古着専門店JAM TRADINGのシステム開発に興味ある人いませんか？興味のある方は @toshima66 までDMください。');
+          const url = encodeURIComponent(location.href);
+          const shareLink = document.getElementById('shareLink');
+          if (shareLink) {
+            shareLink.href = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+          }
+        }
+        
+        setupKeyboardNavigation() {
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+              e.preventDefault();
+              this.next();
+            } else if (e.key === 'ArrowLeft') {
+              e.preventDefault();
+              this.prev();
+            }
+          });
+        }
+        
+        show() {
+          this.slides.forEach((el, i) => {
+            el.classList.toggle('active', i === this.index);
+            el.setAttribute('aria-label', `スライド ${i + 1}`);
+          });
+          
+          // スライド番号を更新
+          const slideNumber = document.getElementById('slideNumber');
+          if (slideNumber) {
+            slideNumber.textContent = `${this.index + 1} / ${this.slides.length}`;
+          }
+        }
+        
+        next() {
+          if (this.index < this.slides.length - 1) {
+            this.index++;
+            this.show();
+          }
+        }
+        
+        prev() {
+          if (this.index > 0) {
+            this.index--;
+            this.show();
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
